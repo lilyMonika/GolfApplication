@@ -29,7 +29,7 @@ namespace GolfApp
         public static Game GetGameById(int id)
         {
             var db = new GolfDB();
-            Game g = db.Games.Where(v => v.UserId.UserId == id).SingleOrDefault();
+            Game g = db.Games.Where(v => v.GameId == id).SingleOrDefault();
             return g;
 
 
